@@ -1,0 +1,10 @@
+services:
+  my_app:
+    image: alpine
+    container_name: my_app
+    environment:
+      APP_NAME: ${APP_NAME}
+      DB_NAME: ${DB_NAME}
+    command: sh -c "env && sleep 1"
+
+
