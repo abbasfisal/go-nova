@@ -11,7 +11,7 @@ func main() {
 
 	cnf := config.NewConfig()
 
-	log.Println("env:", cnf.AppName)
+	log.Println("env:", cnf.App.Name)
 	go func() {
 		fmt.Println("go routine 1")
 	}()
